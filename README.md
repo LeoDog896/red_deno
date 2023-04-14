@@ -23,7 +23,7 @@ While those that compromize integrity will write a file to the local filesystem
 | Permission       | Description                       | Problems                                        |
 | ---------------- | --------------------------------- | ----------------------------------------------- |
 | `--allow-all`    | All permissions.                  | [Full escalation.](./demonstration/base/all.ts) |
-| `--allow-run`    | Running subprocesses.             | Full escalation.                                |
+| `--allow-run`    | Running subprocesses.             | [Full escalation.](./demonstration/base/run.ts) |
 | `--allow-ffi`    | Dynamic linking.                  | Full escalation.                                |
 | `--allow-env`    | Read/write env access             | (unknown)                                       |
 | `--allow-hrtime` | High resolution time measurement. | Fingerprinting                                  |

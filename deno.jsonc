@@ -3,6 +3,7 @@
     "host": "deno run --allow-net demonstration/host.ts",
 
     // all demonstrations
-    "base:all": "deno run --allow-all demonstration/base/all.ts"
+    "base:all": "deno run --allow-all demonstration/base/all.ts",
+    "base:run": "deno run --allow-run demonstration/base/run.ts"
   }
 }
