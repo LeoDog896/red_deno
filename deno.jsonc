@@ -1,0 +1,8 @@
+{
+  "tasks": {
+    "host": "deno run --allow-net demonstration/host.ts",
+
+    // all demonstrations
+    "base:all": "deno run --allow-all demonstration/base/all.ts"
+  }
+}
