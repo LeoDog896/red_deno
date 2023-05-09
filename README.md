@@ -15,16 +15,18 @@ equivalent) to the network.
 While those that compromize integrity will write a file to the local filesystem
 @ `flag.txt` with the contents of `Demonstration of [permission]`.
 
+This will try to rate bad permissions on the CVSS scoring sheet.
+
 ## Base Permissions
 
 > **Note**: Availability doesn't matter in the face of compromized third party
 > code or self-ran code. This only focuses on confidentiality and integrity.
 
-| Permission       | Description                       | Problems                                        |
+| Permission       | Description                       | CVSS                                            |
 | ---------------- | --------------------------------- | ----------------------------------------------- |
-| `--allow-all`    | All permissions.                  | [Full escalation.](./demonstration/base/all.ts) |
-| `--allow-run`    | Running subprocesses.             | [Full escalation.](./demonstration/base/run.ts) |
-| `--allow-ffi`    | Dynamic linking.                  | Full escalation.                                |
+| `--allow-all`    | All permissions.                  | [`10.0`](./demonstration/base/all.ts)           |
+| `--allow-run`    | Running subprocesses.             | [`10.0`](./demonstration/base/run.ts)           |
+| `--allow-ffi`    | Dynamic linking.                  | `10.0`                                          |
 | `--allow-env`    | Read/write env access             | (unknown)                                       |
 | `--allow-hrtime` | High resolution time measurement. | Fingerprinting                                  |
 | `--allow-net`    | Network access.                   | Fingerprinting, Exfiltration                    |
